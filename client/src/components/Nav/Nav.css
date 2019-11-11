@@ -1,0 +1,140 @@
+/*===================================================================*/
+/*Search*/
+/*===================================================================*/
+
+/*body *, html * {
+  box-sizing: border-box;
+}*/
+
+.search-container {
+    position: absolute;
+  /*  left: 8%;*/
+    top: 30%;
+    transform: translate(-20%);
+  }
+  
+  .search-box input[type="text"] {
+    border: none;
+    background: none;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    transition: all .25s ease-in .25s;
+    color: transparent;
+    font-size: 1.5rem;
+  }
+  .search-box input[type="text"]:hover {
+    cursor: crosshair;
+  }
+  .search-box input[type="text"]:hover:focus {
+    cursor: text;
+  }
+  .search-box input[type="text"]:hover + span {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .search-box input[type="text"]:focus {
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+    color: black;
+    color: white;
+  }
+  .search-box input[type="text"]:focus + span {
+    width: 250px;
+  }
+  .search-box input[type="text"]:focus + span::before {
+    width: 2px;
+    opacity: 0;
+    transition: all .25s ease-in;
+  }
+  .search-box input[type="text"] + span {
+    z-index: -1;
+    position: absolute;
+    border: 2px solid white;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    transition: all .25s ease-in .25s;
+    border-radius: 25px;
+    left: 0;
+  }
+  .search-box input[type="text"] + span::before {
+    transition: all .25s ease-in .5s;
+    transform-origin: left top;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    background: white;
+    transform: rotate(45deg) translate(26px, -2px);
+  }
+  
+  /*===================================================================*/
+  /*Profile*/
+  /*===================================================================*/
+  .profile-icon {
+      margin: auto;
+      color: white;
+      /*opacity: 1;*/
+  /*	float: right;*/
+      font-size: 35px;
+      background: transparent;
+  }
+  
+  .upload {
+      color: white;
+      font-size: 35px;
+      /*float: left;*/
+  }
+  
+  .profile-icon:hover, .upload:hover {
+      cursor: crosshair;
+      opacity: 0.5;
+      color: #cccccc;
+      background: transparent;
+  }
+  
+  .profileImage {
+      border-radius: 50%;
+      border: solid 3px;
+      height: 40px;
+      width: 40px;
+      margin-left: 40%;
+  }
+  
+  .profileName {
+      padding: 10%;
+  }
+  
+  .profileHeader {
+      padding: 5%;
+  }
+  
+  .logout {
+      padding-left: 35%;
+  }
+  
+  .buttonsContainer {
+      float: right;
+      color: #fe5032;
+  }
+  
+  .websiteTitle {
+      font-size: 60px;
+      color: white;
+      letter-spacing: 4px;
+      /*padding-top: 20px;*/
+  }
+  
+  
+  .dropdown-menu {
+      width: 200px;
+  }
+  
+  /*.navColumn {
+      padding: 0;
+      margin: 0;
+      width: 105%;
+  }*/
+  

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'https://fonts.googleapis.com/css?family=Reem+Kufi';
+
+/*.square{
+  width: 800px;
+	height: 160px;
+	background: white;
+  border-radius: 6px;
+  box-shadow: 0px 5px 20px #000000; 
+  border: solid black 0.5px;
+}
+
+.player-container{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin-left: 240px;
+  margin-top: -80px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  display: block;
+}
+
+.sub {
+  margin-left: 240px;
+  margin-top: -20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #cacaca;
+  display: block;
+}
+
+.time {
+  margin-left: 240px;
+  margin-top: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  display: block;
+  color: #cacaca;
+}
+
+.end {
+  margin-left: 405px;
+  margin-top: -26px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  display: block;
+  color: #cacaca;
+}
+
+.run{
+  width: 130px;
+	height: 3px;
+	background: red;
+  display: block;
+  margin-left: 240px;
+  position: relative;
+  border-radius: 100px;
+  
+}
+
+.play {
+  width: 200px;
+	height: 3px;
+	background: #EAEAEA;
+  display: block;
+  margin-left: 240px;
+  margin-top: -3px;
+  z-index: -1;
+  border-radius: 10px;
+  
+  
+}
+
+.pause:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.cd {
+	-webkit-animation: rotation 10s infinite linear;
+  margin-top: 30px;
+  margin-left: 64px;
+  display: block;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.cd {
+  width: 100px;
+  position: relative;
+}
+
+.pause{
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.playbtn{
+  display: block;
+  margin-left: 92px;
+  margin-top: -52px;
+  position: absolute;
+  z-index: 1;
+  
+}
+
+.ff{
+  width: 22px;
+  height: 21px;
+}
+
+.forward{
+  display: block;
+  margin-left: 179px;
+  margin-top: -38px;
+  opacity: 1;
+  
+}
+
+.forward:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+.back{
+  display: block;
+  margin-left: 26px;
+  margin-top: -25.5px;
+  opacity: 1;
+  
+  
+}
+
+.back:hover{
+  opacity: .7;
+  cursor: pointer;
+}*/
+
+/*======================================================*/
+/*Soundcloud*/
+
+.soundcloud-row {
+/*  padding-left: 22%;*/
+/*  text-align: center;*/
+}
+
+.player {
+  padding: 10px;
+}
+
+/*======================================================*/
+/*Player buttons*/
+
+.buttonContainer {
+  float: right;
+}
+
+.icons {
+/*  padding: 12px;*/
+}
+
+
+/*==========================================================*/
+@keyframes wave {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.music-card {
+  margin: 100px auto;
+  background: #fff;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border-radius: 6px;
+}
+
+.image {
+  background: /*url('https://i1.sndcdn.com/artworks-000301272270-84hvn4-t500x500.jpg') */
+  no-repeat 75%;
+  background-size: cover;  
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
+  height: 300px;
+  width: 300px;
+}
+
+.image:after {
+  height: 100px;
+  content: '';
+  top: 200px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(9, 2, 4, 0), #444);
+}
+
+.wave {
+  position: absolute;
+  height: 750px;
+  width: 750px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -70%;
+  margin-top: -130%;
+  background: radial-gradient(#353535, #383737);
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 10px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+/* when stop */
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+/* when stop */
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+/* when stop */
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+.info {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.artist {
+  color: #cfcfcf;
+  font-size: 1.2em;
+  letter-spacing: 0.08em;
+  font-family: 'Reem Kufi', sans-serif;
+  margin-top: -10px;
+}
+
+.fa {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #555;
+}
+
+.fa-play {
+  /*display: none;*/
+  margin-right: 30px;
+}
+
+.reactPlayerDisplay {
+  display: none;
+}
+
+.musicPlayers {
+  /*display: inline-block;*/
+  display: flex;
+  flex-wrap: wrap;
+  /*margin: 20%;*/
+}
