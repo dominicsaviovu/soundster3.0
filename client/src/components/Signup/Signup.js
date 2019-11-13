@@ -60,7 +60,7 @@ class Signup extends Component {
   render() {
     return (
     	<div classNameName="container">
-    		<h1 className="soundifySignup">SOUNDSTER</h1>
+    		<h1 className="soundsterSignup">SOUNDSTER</h1>
 			<form className="signupForm" method="post" action="/main">
 				<label>
 					<input type="text" name="name" onChange={this.handleInputChange} value={this.state.name} required />

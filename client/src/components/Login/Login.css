@@ -78,7 +78,7 @@
   /*==================================================*/
   /*Title/links*/
   
-  .soundify {
+  .soundster {
     color: white;
     text-align: center;
     font-size: 60px;
@@ -87,7 +87,7 @@
     transition: transform 0.5s;
   }
   
-  .soundify:hover {
+  .soundster:hover {
     transform: scale(1.2);
   }
   

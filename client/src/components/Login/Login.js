@@ -58,7 +58,7 @@ class Login extends Component {
 
 			<div className="row">
 				<div className="col-md-4"></div>
-	    		<h1 className="soundify col-md-4">SOUNDSTER</h1>
+	    		<h1 className="soundster col-md-4">SOUNDSTER</h1>
 	    	</div>
 			<div id="preloader_1">
 				<span></span>
