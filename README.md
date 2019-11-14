@@ -30,4 +30,8 @@ This app was designed for both music-lovers and muscians.  Soundster3.0 not only
 
 ## How To Use
 
+- First it asks you to either signup or login. Once that step is completed, it will take you to the homepage. 
+- On the homepage you will be able to look at the songs that are highlighted.You can play and pause those songs.
+- Youll be able to add music when you press on the plus button. 
+- To add a song you must have an audio file to add. Fill out the form and you'll be able to add the song.
 
