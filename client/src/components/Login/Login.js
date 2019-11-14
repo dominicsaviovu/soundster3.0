@@ -42,7 +42,8 @@ class Login extends Component {
 	        })
 	    }
 	    )
-	    promise.catch(error => console.log(error.message));
+		promise.catch(error => console.log(error.message));
+		
 	}
 
   render() {
